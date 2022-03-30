@@ -36,3 +36,7 @@ footer p {
     background-color: lightblue;
     font-size: 20px;
 }
+style {
+    border: 2pt solid red;
+    cursor: grab;
+}
