@@ -43,6 +43,8 @@ function keputmentes(){
     console.log(kepek);
     for (let index = 0; index < kepek.length; index++) {
         kepek[index].addEventListener("click",kattint);
+        kepek[index].addEventListener("mouseover",huzfel);
+        kepek[index].addEventListener("mouseout",huzle);
     }
 }
 var tomb = [];
@@ -50,4 +52,21 @@ function kattint(){
     var eleresiut = event.target.src;
     tomb.push(eleresiut);
     console.log(tomb);
+    /*7. feladat*/ 
+    var kep = `<img src='${event.target.src}' alt='${event.target.alt}' >`
+    //var kep="<img src=''"+event.target.src+"' alt='" + event.target.alt + "'>"
+    $("article #csonak")[0].innerHTML += kep
 }
+function huzfel(event){
+    event.target.classList.add("kiemel");
+}
+function huzle(event){
+    event.target.classList.remove("kiemel");
+}
+/*5. feladat*/
+function kiemel(){
+    for (let index = 0; index < array.length; index++) {
+        const element = array[index];
+    }
+}
+
